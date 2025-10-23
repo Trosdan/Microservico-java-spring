@@ -1,11 +1,29 @@
+# =============================================================================
+# MICROSERVIÇOS JAVA SPRING - TESTES DE API
+# =============================================================================
+# Este arquivo contém testes para os endpoints dos microserviços de Produtos e Pedidos
+# Para usar: Instale a extensão "REST Client" no VS Code e clique em "Send Request"
+# Gateway URL: http://localhost:8080
+# =============================================================================
+
+# =============================================================================
+# PRODUTOS - OPERAÇÕES CRUD
+# =============================================================================
+
+# 1. LISTAR TODOS OS PRODUTOS
+# Retorna uma lista com todos os produtos cadastrados no sistema
 GET http://localhost:8080/produtos
 
 ###
 
+# 2. BUSCAR PRODUTO POR ID
+# Busca um produto específico pelo seu identificador único
 GET http://localhost:8080/produtos/1
 
 ###
 
+# 3. CRIAR NOVO PRODUTO
+# Cadastra um novo produto no sistema com as informações fornecidas
 POST http://localhost:8080/produtos
 Content-Type: application/json
 
@@ -18,6 +36,8 @@ Content-Type: application/json
 
 ###
 
+# 4. ATUALIZAR PRODUTO EXISTENTE
+# Atualiza as informações de um produto específico pelo ID
 PUT http://localhost:8080/produtos/1
 Content-Type: application/json
 
@@ -30,21 +50,30 @@ Content-Type: application/json
 
 ###
 
+# 5. EXCLUIR PRODUTO
+# Remove um produto do sistema pelo seu ID
 DELETE http://localhost:8080/produtos/1
 
-
 ###
 
+# =============================================================================
+# PEDIDOS - OPERAÇÕES CRUD
+# =============================================================================
+
+# 6. LISTAR TODOS OS PEDIDOS
+# Retorna uma lista com todos os pedidos cadastrados no sistema
 GET http://localhost:8080/pedidos
 
-
 ###
 
+# 7. BUSCAR PEDIDO POR ID
+# Busca um pedido específico pelo seu identificador único
 GET http://localhost:8080/pedidos/1
 
-
 ###
 
+# 8. CRIAR NOVO PEDIDO
+# Cadastra um novo pedido no sistema com os produtos e informações fornecidas
 POST http://localhost:8080/pedidos
 Content-Type: application/json
 
@@ -58,6 +87,8 @@ Content-Type: application/json
 
 ###
 
+# 9. ATUALIZAR PEDIDO EXISTENTE
+# Atualiza as informações de um pedido específico pelo ID
 PUT http://localhost:8080/pedidos/1
 Content-Type: application/json
 
@@ -71,4 +102,6 @@ Content-Type: application/json
 
 ###
 
+# 10. EXCLUIR PEDIDO
+# Remove um pedido do sistema pelo seu ID
 DELETE http://localhost:8080/pedidos/1
