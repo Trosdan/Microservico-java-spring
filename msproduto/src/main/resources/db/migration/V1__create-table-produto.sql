@@ -1,0 +1,7 @@
+CREATE TABLE tb_produtos(
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(150) NOT NULL,
+  quantidade INT NOT NULL,
+  descricao VARCHAR(255) NOT NULL,
+  preco DOUBLE NOT NULL
+)

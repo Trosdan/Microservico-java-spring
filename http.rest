@@ -1,0 +1,74 @@
+GET http://localhost:8080/produtos
+
+###
+
+GET http://localhost:8080/produtos/1
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+  "nome": "Produto de limpeza",
+  "quantidade": 5,
+  "descricao": "Para lavar roupa",
+  "preco": 14.9
+}
+
+###
+
+PUT http://localhost:8080/produtos/1
+Content-Type: application/json
+
+{
+  "nome": "Produto de limpeza #2",
+  "quantidade": 5,
+  "descricao": "Para lavar roupa",
+  "preco": 14.9
+}
+
+###
+
+DELETE http://localhost:8080/produtos/1
+
+
+###
+
+GET http://localhost:8080/pedidos
+
+
+###
+
+GET http://localhost:8080/pedidos/1
+
+
+###
+
+POST http://localhost:8080/pedidos
+Content-Type: application/json
+
+{
+  "dataPedido": "2025-10-05T12:00:00",
+  "idProdutos": [
+    1, 2, 3
+  ],
+  "statusPedido": "CRIADO"
+}
+
+###
+
+PUT http://localhost:8080/pedidos/1
+Content-Type: application/json
+
+{
+  "dataPedido": "2025-10-05T15:00:00",
+  "idProdutos": [
+    10
+  ],
+  "statusPedido": "CRIADO"
+}
+
+###
+
+DELETE http://localhost:8080/pedidos/1

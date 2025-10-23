@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "MS Service Registry",
+      "request": "launch",
+      "mainClass": "dev.jordanoliveira.serviceregistry.ServiceregistryApplication",
+      "projectName": "serviceregistry"
+    },
+    {
+      "type": "java",
+      "name": "MS Gateway",
+      "request": "launch",
+      "mainClass": "dev.jordanoliveira.gateway.GatewayApplication",
+      "projectName": "gateway"
+    },
+    {
+      "type": "java",
+      "name": "MS Produto",
+      "request": "launch",
+      "mainClass": "dev.jordanoliveira.msproduto.MsprodutoApplication",
+      "projectName": "msproduto"
+    },
+    {
+      "type": "java",
+      "name": "MS Pedido",
+      "request": "launch",
+      "mainClass": "dev.jordanoliveira.mspedido.MspedidoApplication",
+      "projectName": "mspedido"
+    }
+  ]
+}
